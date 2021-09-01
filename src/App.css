@@ -12,6 +12,7 @@
   list-style: none;
   background: rgb(20,23,24);
   justify-content: flex-start;
+  width: 100%;
 }
 .nav-elem {
   margin: 0.5rem 1.5rem;
@@ -25,6 +26,10 @@
 #text-holder {
   display: flex;
   justify-content: center;
+  width: 100vw;
+}
+#text-{
+  background-color: rgb(20,23,24);
 }
 #input {
   margin: 1.5rem;
@@ -34,7 +39,7 @@
 }
 #buttons {
   display: flex;
-  justify-content: space-evenly;
+  width: 100vw;
 }
 .btn-def{
   background: rgb(1,161,200);
@@ -43,11 +48,13 @@
   border: none;
   border-radius: 20px;
   height: 100%;
+  margin: 1.0rem 1.0rem;
 }
 .preview-container {
   display: flex;
   flex-direction: column;
   margin: 1.5rem 5.5rem;
+  width: 100vw;
 }
 .preview-elements {
   margin: 1.5rem 0;
@@ -56,10 +63,12 @@
   height: 100vh;
   color: white;
   background-color: rgb(20,23,24);
+  width: 100vw;
 }
 .text-area-light{
   color: black;
   background-color: white;
+  width: 100vw;
 }
 #theme-btn{
   background: rgb(20,23,24);
@@ -71,6 +80,7 @@
   height: 100vh;
   color: black;
   background-color: #e8ec3a;
+  width: 100vw;
 }
 .btn-yellow{
   background-color:  #507d2a;
@@ -79,7 +89,67 @@
   padding: 10px;
   border: none;
   border-radius: 20px;
+  margin: 1.0rem 2.0rem;
 }
 .theme-btns{
   margin-left: 7.0rem;
+}
+.footer-black{
+  background-color: rgb(20,23,24); 
+}
+.footer-yellow{
+ background-color: #507d2a;
+}
+@media only screen and (max-width: 800px) and (min-width: 320px){
+  
+  #buttons{
+    flex-wrap: wrap;
+    width: 500px;
+  }
+  .nav{
+    width: 500px;
+  }
+  #text-holder{
+    width: 500px;
+  }
+  .preview-container{
+    margin: 1.0rem 2.0rem;
+    width: 80vw;
+  }
+  .nav-elem-links{
+    margin: 0.1rem;
+  }
+  .nev-elem{
+    margin: 0.5rem 0.2rem;
+  }
+  .theme-btns{
+    margin: 0;
+  }
+  .text-area-light{
+    width: 500px;
+  } 
+  .text-area-dark{
+    width: 500px;
+  }
+  .text-area-yellow{
+    width: 500px;
+    height: 100vh;
+  } 
+  #text-preview{
+    flex-wrap: wrap;
+  }
+  .preview-elements{
+    max-width: 500px;
+    overflow-wrap: break-word;
+  }
+  #main-dark{
+    background: rgb(20,23,24);
+    max-width: 100vw;
+    max-height: 100vw;
+  }
+  #main-yellow{
+    background: #e8ec3a;
+    max-width: 100vw;
+    max-height: 100vw;
+  }
 }

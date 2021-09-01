@@ -3,12 +3,13 @@ import './App.css';
 import Navbar from './Navbar.js';
 import Textarea from './Textarea.js';
 import React, {useState} from 'react';
-import About from './About.js'
+import About from './About.js';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
+  // eslint-disable-next-line
   Link
 } from "react-router-dom";
 
@@ -36,14 +37,17 @@ function App() {
     <Router>
     <Navbar mode={mode} lightToggle={lightToggle} darkToggle={darkToggle} yellowToggle={yellowToggle} />
     <Switch>
+    <div id={`main-${mode}`}> 
           <Route path="/about">
             <About />
           </Route>
           <Route path="/">
             <Textarea btnMode={btnMode} mode={mode} />
           </Route>
+    </div>
     </Switch>
     </Router>
+    
     </>
   );
 }

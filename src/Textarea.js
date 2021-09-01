@@ -55,7 +55,7 @@ export default function Navbar(props) {
       </div>
       <div className="preview-elements">
         <h2>Preview</h2>
-        <p>
+        <p id="text-preview">
           {text}
         </p>
       </div>

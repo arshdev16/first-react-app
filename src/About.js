@@ -4,7 +4,7 @@ export default function Navbar(props) {
 
   return(
     <div>
-    not even close babayyyyy technoblade never dies
+    not even close babayyyyy technoblade never diess
     </div>
     )
 }

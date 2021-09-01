@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.2rem;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  height: 11vh;
+  list-style: none;
+  background: rgb(20,23,24);
+  justify-content: flex-start;
+}
+.nav-elem {
+  margin: 0.5rem 1.5rem;
+}
+.nav-elem-links{
+  margin: 2.0rem;
+  text-decoration: none;
+  color: white;
+}
+
+#text-holder {
+  display: flex;
+  justify-content: center;
+}
+#input {
+  margin: 1.5rem;
+  width: 70vw;
+  padding: 20px;
+  border: 3px solid black;
+}
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn-def{
+  background: rgb(1,161,200);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  height: 100%;
+}
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 5.5rem;
+}
+.preview-elements {
+  margin: 1.5rem 0;
+}
+.text-area-dark {
+  height: 100vh;
+  color: white;
+  background-color: rgb(20,23,24);
+}
+.text-area-light{
+  color: black;
+  background-color: white;
+}
+#theme-btn{
+  background: rgb(20,23,24);
+  color: white;
+  padding: 10px;
+  border: none;
+}
+.text-area-yellow{
+  height: 100vh;
+  color: black;
+  background-color: #e8ec3a;
+}
+.btn-yellow{
+  background-color:  #507d2a;
+  height: 100%;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+}
+.theme-btns{
+  margin-left: 7.0rem;
+}
